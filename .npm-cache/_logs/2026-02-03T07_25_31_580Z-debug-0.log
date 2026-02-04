@@ -1,0 +1,118 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.6.2
+2 info using node@v24.13.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/srujan/quickhsn-in/.npmrc
+5 silly config load:file:/Users/srujan/quickhsn-in/.npm-home/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "/Users/srujan/quickhsn-in/.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/srujan/quickhsn-in/.npm-cache/_logs/2026-02-03T07_25_31_580Z-
+10 verbose logfile /Users/srujan/quickhsn-in/.npm-cache/_logs/2026-02-03T07_25_31_580Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly idealTree buildDeps
+14 silly fetch manifest next@14.2.18
+15 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+16 http fetch GET https://registry.npmjs.org/next attempt 1 failed with ENOTFOUND
+17 http fetch GET https://registry.npmjs.org/next attempt 2 failed with ENOTFOUND
+18 http fetch GET https://registry.npmjs.org/next attempt 3 failed with ENOTFOUND
+19 silly fetch manifest react@^18.3.1
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http fetch GET https://registry.npmjs.org/react attempt 1 failed with ENOTFOUND
+22 http fetch GET https://registry.npmjs.org/react attempt 2 failed with ENOTFOUND
+23 http fetch GET https://registry.npmjs.org/react attempt 3 failed with ENOTFOUND
+24 silly fetch manifest react-dom@^18.3.1
+25 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+26 http fetch GET https://registry.npmjs.org/react-dom attempt 1 failed with ENOTFOUND
+27 http fetch GET https://registry.npmjs.org/react-dom attempt 2 failed with ENOTFOUND
+28 http fetch GET https://registry.npmjs.org/react-dom attempt 3 failed with ENOTFOUND
+29 silly fetch manifest @supabase/supabase-js@^2.45.0
+30 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js cache-miss
+31 http fetch GET https://registry.npmjs.org/@supabase%2fsupabase-js attempt 1 failed with ENOTFOUND
+32 http fetch GET https://registry.npmjs.org/@supabase%2fsupabase-js attempt 2 failed with ENOTFOUND
+33 http fetch GET https://registry.npmjs.org/@supabase%2fsupabase-js attempt 3 failed with ENOTFOUND
+34 silly fetch manifest @types/node@^20.17.6
+35 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+36 http fetch GET https://registry.npmjs.org/@types%2fnode attempt 1 failed with ENOTFOUND
+37 http fetch GET https://registry.npmjs.org/@types%2fnode attempt 2 failed with ENOTFOUND
+38 http fetch GET https://registry.npmjs.org/@types%2fnode attempt 3 failed with ENOTFOUND
+39 silly fetch manifest @types/react@^18.3.12
+40 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+41 http fetch GET https://registry.npmjs.org/@types%2freact attempt 1 failed with ENOTFOUND
+42 http fetch GET https://registry.npmjs.org/@types%2freact attempt 2 failed with ENOTFOUND
+43 http fetch GET https://registry.npmjs.org/@types%2freact attempt 3 failed with ENOTFOUND
+44 silly fetch manifest @types/react-dom@^18.3.1
+45 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom cache-miss
+46 http fetch GET https://registry.npmjs.org/@types%2freact-dom attempt 1 failed with ENOTFOUND
+47 http fetch GET https://registry.npmjs.org/@types%2freact-dom attempt 2 failed with ENOTFOUND
+48 http fetch GET https://registry.npmjs.org/@types%2freact-dom attempt 3 failed with ENOTFOUND
+49 silly fetch manifest autoprefixer@^10.4.20
+50 silly packumentCache full:https://registry.npmjs.org/autoprefixer cache-miss
+51 http fetch GET https://registry.npmjs.org/autoprefixer attempt 1 failed with ENOTFOUND
+52 http fetch GET https://registry.npmjs.org/autoprefixer attempt 2 failed with ENOTFOUND
+53 http fetch GET https://registry.npmjs.org/autoprefixer attempt 3 failed with ENOTFOUND
+54 silly fetch manifest eslint@^8.57.0
+55 silly packumentCache full:https://registry.npmjs.org/eslint cache-miss
+56 http fetch GET https://registry.npmjs.org/eslint attempt 1 failed with ENOTFOUND
+57 http fetch GET https://registry.npmjs.org/eslint attempt 2 failed with ENOTFOUND
+58 http fetch GET https://registry.npmjs.org/eslint attempt 3 failed with ENOTFOUND
+59 silly fetch manifest eslint-config-next@14.2.18
+60 silly packumentCache full:https://registry.npmjs.org/eslint-config-next cache-miss
+61 http fetch GET https://registry.npmjs.org/eslint-config-next attempt 1 failed with ENOTFOUND
+62 http fetch GET https://registry.npmjs.org/eslint-config-next attempt 2 failed with ENOTFOUND
+63 http fetch GET https://registry.npmjs.org/eslint-config-next attempt 3 failed with ENOTFOUND
+64 silly fetch manifest postcss@^8.4.49
+65 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+66 http fetch GET https://registry.npmjs.org/postcss attempt 1 failed with ENOTFOUND
+67 http fetch GET https://registry.npmjs.org/postcss attempt 2 failed with ENOTFOUND
+68 http fetch GET https://registry.npmjs.org/postcss attempt 3 failed with ENOTFOUND
+69 silly fetch manifest tailwindcss@^3.4.15
+70 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+71 http fetch GET https://registry.npmjs.org/tailwindcss attempt 1 failed with ENOTFOUND
+72 http fetch GET https://registry.npmjs.org/tailwindcss attempt 2 failed with ENOTFOUND
+73 http fetch GET https://registry.npmjs.org/tailwindcss attempt 3 failed with ENOTFOUND
+74 silly fetch manifest typescript@^5.6.3
+75 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+76 http fetch GET https://registry.npmjs.org/typescript attempt 1 failed with ENOTFOUND
+77 http fetch GET https://registry.npmjs.org/typescript attempt 2 failed with ENOTFOUND
+78 http fetch GET https://registry.npmjs.org/typescript attempt 3 failed with ENOTFOUND
+79 silly placeDep ROOT @supabase/supabase-js@ OK for: quickhsn-in@0.1.0 want: ^2.45.0
+80 silly placeDep ROOT @types/node@ OK for: quickhsn-in@0.1.0 want: ^20.17.6
+81 silly placeDep ROOT @types/react@ OK for: quickhsn-in@0.1.0 want: ^18.3.12
+82 silly placeDep ROOT @types/react-dom@ OK for: quickhsn-in@0.1.0 want: ^18.3.1
+83 silly placeDep ROOT autoprefixer@ OK for: quickhsn-in@0.1.0 want: ^10.4.20
+84 silly placeDep ROOT eslint@ OK for: quickhsn-in@0.1.0 want: ^8.57.0
+85 silly placeDep ROOT eslint-config-next@ OK for: quickhsn-in@0.1.0 want: 14.2.18
+86 silly placeDep ROOT next@ OK for: quickhsn-in@0.1.0 want: 14.2.18
+87 silly placeDep ROOT postcss@ OK for: quickhsn-in@0.1.0 want: ^8.4.49
+88 silly placeDep ROOT react@ OK for: quickhsn-in@0.1.0 want: ^18.3.1
+89 silly placeDep ROOT react-dom@ OK for: quickhsn-in@0.1.0 want: ^18.3.1
+90 silly placeDep ROOT tailwindcss@ OK for: quickhsn-in@0.1.0 want: ^3.4.15
+91 silly placeDep ROOT typescript@ OK for: quickhsn-in@0.1.0 want: ^5.6.3
+92 verbose type system
+93 verbose stack FetchError: request to https://registry.npmjs.org/@supabase%2fsupabase-js failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+93 verbose stack     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+93 verbose stack     at ClientRequest.emit (node:events:508:28)
+93 verbose stack     at emitErrorEvent (node:_http_client:108:11)
+93 verbose stack     at _destroy (node:_http_client:962:9)
+93 verbose stack     at onSocketNT (node:_http_client:982:5)
+93 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+94 error code ENOTFOUND
+95 error syscall getaddrinfo
+96 error errno ENOTFOUND
+97 error network request to https://registry.npmjs.org/@supabase%2fsupabase-js failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+98 error network This is a problem related to network connectivity.
+98 error network In most cases you are behind a proxy or have bad network settings.
+98 error network
+98 error network If you are behind a proxy, please make sure that the
+98 error network 'proxy' config is set properly.  See: 'npm help config'
+99 silly unfinished npm timer reify 1770103531707
+100 silly unfinished npm timer reify:loadTrees 1770103531709
+101 verbose cwd /Users/srujan/quickhsn-in
+102 verbose os Darwin 24.0.0
+103 verbose node v24.13.0
+104 verbose npm  v11.6.2
+105 verbose exit 1
+106 verbose code 1
+107 error A complete log of this run can be found in: /Users/srujan/quickhsn-in/.npm-cache/_logs/2026-02-03T07_25_31_580Z-debug-0.log
