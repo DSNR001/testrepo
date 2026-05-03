@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { getSupabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase/supabase";
 import type { HSNMasterRow } from "@/lib/supabase/types";
 export const dynamic = "force-dynamic";
 export default function HomePage() {
