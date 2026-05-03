@@ -1,10 +1,13 @@
 /** Row shape for the hsn_master table (align with your Supabase schema). */
 export type HSNMasterRow = {
-  HSN_CD: string;
-  HSN_Description: string;
-  "GST Rate": number | null;
-  gst_math_rate: number | null;
-  is_conditional: boolean | null;
+  hsn_code: string;
+  description: string;
+  gst_rate: number | null;
+  condition_type: string | null;
+  notes: string | null;
+  keywords: string | null;
+  level: string | null;
+  category: string | null;
   [key: string]: unknown;
 };
 
