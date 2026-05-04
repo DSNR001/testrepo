@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { getSupabase } from "@/lib/supabase/supabase";
+import { getSupabase } from "@/lib/supabase/supabase.ts";
 import type { HSNMasterRow } from "@/lib/supabase/types";
 export const dynamic = "force-dynamic";
 export default function HomePage() {
@@ -22,7 +22,7 @@ export default function HomePage() {
     setLoading(true);
     setSearched(true);
     try {
-      const supabase = getSupabase();
+      const supabase = getSupabase(); 
       const pattern = `%${term}%`;
       const isNumeric = /^\d{2,8}$/.test(term.trim());
       if (isNumeric) {
