@@ -95,6 +95,7 @@ const merged = combined.filter((row) => {
 const detailedResults = results.filter(
   (row) => String(row.hsn_code).length === 8
 );
+console.log("NEW BUILD ACTIVE");
 return (
     <main className="min-h-screen flex flex-col items-center px-4 py-8 sm:py-12">
       <div className="w-full max-w-2xl flex flex-col gap-6">
