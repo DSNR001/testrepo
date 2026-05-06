@@ -2,7 +2,6 @@
 
 import { useState, useCallback } from "react";
 import { createClient } from "@supabase/supabase-js";
-import { getSupabase } from "../lib/supabase/supabase*";
 import type { HSNMasterRow } from "@/lib/supabase/types";
 export const dynamic = "force-dynamic";
 export default function HomePage() {
@@ -27,8 +26,7 @@ export default function HomePage() {
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 ); 
-      const pattern = `%${term}%`;
-      const isNumeric = /^\d{2,8}$/.test(term.trim());
+        const isNumeric = /^\d{2,8}$/.test(term.trim());
       if (isNumeric) {
         const { data: exact, error: errExact } = await supabase
           .from("hsn_master")
@@ -181,17 +179,6 @@ return (
                 const sgstAmt = (amt * mathRate) / 200;
                 const igstAmt = gstAmt;
                 const total = amt + gstAmt;
-                {amt > 0 && (
-  <div className="mt-3 text-sm text-surface-700 dark:text-surface-300 space-y-1">
-    <div>GST ({mathRate}%): ₹{gstAmt.toFixed(2)}</div>
-    <div>CGST: ₹{cgstAmt.toFixed(2)}</div>
-    <div>SGST: ₹{sgstAmt.toFixed(2)}</div>
-    <div>IGST: ₹{igstAmt.toFixed(2)}</div>
-    <div className="font-medium mt-1">
-      Total: ₹{total.toFixed(2)}
-    </div>
-  </div>
-)}
                 return (
                   <li
                     key={key}
@@ -199,14 +186,14 @@ return (
                     >
                     <div className="flex items-center justify-between gap-3">
                       <div className="flex items-center gap-2">
-  <div className="font-mono font-medium text-primary-600 dark:text-primary-400">
-    {row.hsn_code}
-  </div>
+                     <div className="font-mono font-medium text-primary-600 dark:text-primary-400">
+                      {row.hsn_code}
+                     </div>
 
-  <span className="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
-    {String(row.hsn_code).length === 4 ? "4-digit" : "6-digit"}
-  </span>
-</div>
+                    <span className="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+                    {String(row.hsn_code).length === 4 ? "4-digit" : "6-digit"}
+                   </span>
+                    </div>
                       <button
                         type="button"
                         onClick={() => handleCopy(String(row.hsn_code), key)}
@@ -280,6 +267,17 @@ return (
                         </div>
                       </div>
                     </div>
+                      {amt > 0 && (
+  <div className="mt-3 text-sm text-surface-700 dark:text-surface-300 space-y-1">
+    <div>GST ({mathRate}%): ₹{gstAmt.toFixed(2)}</div>
+    <div>CGST: ₹{cgstAmt.toFixed(2)}</div>
+    <div>SGST: ₹{sgstAmt.toFixed(2)}</div>
+    <div>IGST: ₹{igstAmt.toFixed(2)}</div>
+    <div className="font-medium mt-1">
+      Total: ₹{total.toFixed(2)}
+    </div>
+  </div>
+)}     
                   </li>
                 );
               })}
@@ -300,17 +298,6 @@ return (
                 const sgstAmt = (amt * mathRate) / 200;
                 const igstAmt = gstAmt;
                 const total = amt + gstAmt;
-                {amt > 0 && (
-  <div className="mt-3 text-sm text-surface-700 dark:text-surface-300 space-y-1">
-    <div>GST ({mathRate}%): ₹{gstAmt.toFixed(2)}</div>
-    <div>CGST: ₹{cgstAmt.toFixed(2)}</div>
-    <div>SGST: ₹{sgstAmt.toFixed(2)}</div>
-    <div>IGST: ₹{igstAmt.toFixed(2)}</div>
-    <div className="font-medium mt-1">
-      Total: ₹{total.toFixed(2)}
-    </div>
-  </div>
-)}
                 return (
                   <li
                     key={key}
@@ -397,6 +384,17 @@ return (
                         </div>
                       </div>
                     </div>
+                     {amt > 0 && (
+  <div className="mt-3 text-sm text-surface-700 dark:text-surface-300 space-y-1">
+    <div>GST ({mathRate}%): ₹{gstAmt.toFixed(2)}</div>
+    <div>CGST: ₹{cgstAmt.toFixed(2)}</div>
+    <div>SGST: ₹{sgstAmt.toFixed(2)}</div>
+    <div>IGST: ₹{igstAmt.toFixed(2)}</div>
+    <div className="font-medium mt-1">
+      Total: ₹{total.toFixed(2)}
+    </div>
+  </div>
+)}
                   </li>
                 );
     })}
